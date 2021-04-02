@@ -1,19 +1,15 @@
 package com.calculator;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class AppForCalculating {
 
     public static void main(String[] args){
-
         Scanner scanner = new Scanner(System.in);
         int opcion = 5;
         do{
-            try {
-                Runtime.getRuntime().exec("printf \"\\033c\"");
-            } catch (IOException e) {
-                e.printStackTrace();
+            for(int i = 0; i < 15; i++ ){
+                System.out.println("\n");
             }
 
             System.out.println("1. Sumar");
@@ -52,6 +48,8 @@ public class AppForCalculating {
                 default:
                     System.out.println("Opcion no existente!!");
             }
+            System.out.println("Presione ingrese un caracter para continuar!");
+            scanner.next();
         }while(opcion != 5);
     }
 
