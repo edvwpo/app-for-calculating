@@ -21,7 +21,7 @@ public class AppForCalculating {
 
             switch (opcion){
                 case 1:
-                    System.out.println("La suma es: " + sumar(numero1, numero2);
+                    System.out.println("La suma es: " + sumar(numero1, numero2));
                     break;
                 case 2:
                     System.out.println("La resta es: " + restar(numero1, numero2));
